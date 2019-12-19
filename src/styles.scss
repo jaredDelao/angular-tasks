@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  box-shadow: 10px 10px 10px #ccc;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.container {
+  width: 100%;
+  padding-top: 10%;
+}
+
+.btn {
+  margin-top: 7%;
+}

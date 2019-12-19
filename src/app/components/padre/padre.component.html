@@ -1,1 +1,18 @@
-<p>padre works!</p>
+<div class="container d-flex justify-content-around">
+    <div class="card" style="width: 18rem;">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/graphic-design-basics/_jcr_content/main-pars/image/5407-graphic-design-basics_1408x792.jpg"
+            class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Componente Padre</h5>
+            <input type="text" placeholder="texto..." [(ngModel)]="mensaje">
+
+            <div class="alert alert-primary" role="alert" *ngIf="mensajeRecibido">
+                {{mensajeRecibido}}
+            </div>
+            <!-- <button class="btn btn-primary" (click)="enviar()">Enviar a hijo</button> -->
+        </div>
+    </div>
+
+    <app-hijo [texto]="mensaje" (enviar)="recibirTextoHijo($event)"></app-hijo>
+    
+</div>

@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img src="http://www.techanalysis.ca/wp-content/uploads/2018/12/Graphic-Designing-Empowers-Young-Minds-to-Learn-And-Grow.png"
+        class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">Componente Hijo</h5>
+        <input type="text" placeholder="texto..." [(ngModel)]="textoInput">
+        <div class="alert alert-success" role="alert" *ngIf="textoDesdePadre">
+            {{textoDesdePadre}}
+        </div>
+        <button class="btn btn-primary" (click)="enviar()">Enviar al padre</button>
+    </div>
+</div>

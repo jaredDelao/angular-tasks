@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img src="https://image.freepik.com/free-vector/modern-geometric-shapes-gradient-background_23-2148269884.jpg"
+        class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">Hermano 2</h5>
+        <input type="text" placeholder="texto..." [(ngModel)]="textoInput">
+        <div class="alert alert-success" role="alert" >
+            {{textoEntrante}}
+        </div>
+        <button class="btn btn-primary" (click)="enviar()">Enviar</button>
+    </div>
+</div>
